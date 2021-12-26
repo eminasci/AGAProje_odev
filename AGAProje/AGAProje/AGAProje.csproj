@@ -1,0 +1,195 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{EA3B5096-D57D-4670-8699-62965EB80256}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>AGAProje</RootNamespace>
+    <AssemblyName>AGAProje</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Data.Desktop.v21.2, Version=21.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Data.v21.2, Version=21.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\packages\DevExpress.Data.21.2.4\lib\net452\DevExpress.Data.v21.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Printing.v21.2.Core, Version=21.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v21.2, Version=21.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraEditors.v21.2, Version=21.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraGrid.v21.2, Version=21.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v21.2, Version=21.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraPrinting.v21.2, Version=21.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExtreme.AspNet.Data, Version=2.8.6.0, Culture=neutral, PublicKeyToken=982f5dab1439d0f7, processorArchitecture=MSIL">
+      <HintPath>..\packages\DevExtreme.AspNet.Data.2.8.6\lib\net452\DevExtreme.AspNet.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="MaterialSkin, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MaterialSkin.Updated.0.2.2\lib\MaterialSkin.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=11.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.11.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Odeme.cs" />
+    <Compile Include="SiparisDetay.cs" />
+    <Compile Include="Urun.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Urun.Designer.cs">
+      <DependentUpon>Urun.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAdminGiris.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAdminGiris.Designer.cs">
+      <DependentUpon>FormAdminGiris.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormGiris.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormGiris.Designer.cs">
+      <DependentUpon>FormGiris.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Siparis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Siparis.Designer.cs">
+      <DependentUpon>Siparis.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormMusGiris.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMusGiris.Designer.cs">
+      <DependentUpon>FormMusGiris.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormOdeme.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormOdeme.Designer.cs">
+      <DependentUpon>FormOdeme.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Musteri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Musteri.Designer.cs">
+      <DependentUpon>Musteri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SATIS_OTOMASYONUDataSet.cs">
+      <DependentUpon>SATIS_OTOMASYONUDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SATIS_OTOMASYONUDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SATIS_OTOMASYONUDataSet.xsd</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Urun.resx">
+      <DependentUpon>Urun.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAdminGiris.resx">
+      <DependentUpon>FormAdminGiris.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormGiris.resx">
+      <DependentUpon>FormGiris.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Siparis.resx">
+      <DependentUpon>Siparis.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMusGiris.resx">
+      <DependentUpon>FormMusGiris.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Musteri.resx">
+      <DependentUpon>Musteri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormOdeme.resx">
+      <DependentUpon>FormOdeme.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="SATIS_OTOMASYONUDataSet.xsc">
+      <DependentUpon>SATIS_OTOMASYONUDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="SATIS_OTOMASYONUDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SATIS_OTOMASYONUDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SATIS_OTOMASYONUDataSet.xss">
+      <DependentUpon>SATIS_OTOMASYONUDataSet.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AGAlogoSon4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sepet0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AGAlogo1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CustomerLogo11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AdminLogo11.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
